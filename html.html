@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>San Valentín</title>
+  <link rel="stylesheet" href="css2.css" />
+</head>
+
+<body>
+  <main class="frame">
+    <!-- Pantalla 1 -->
+    <section id="screen-ask" class="panel" aria-label="Pregunta">
+      <h1 class="title">Una pregunta importante 💘</h1>
+
+      <p class="question">
+        ¿Quieres ser mi San Valentín de los impacientes?
+      </p>
+
+      <p id="hint" class="hint" aria-live="polite"></p>
+
+      <div id="playground" class="playground" aria-label="Respuestas">
+        <button id="btn-yes" class="btn btn-yes" type="button">Sí</button>
+
+        <!-- El botón NO se reposiciona dentro de este contenedor -->
+        <button id="btn-no" class="btn btn-no" type="button">No</button>
+      </div>
+
+      <p class="fineprint">
+        No aceptaré un no por respuesta.
+      </p>
+    </section>
+
+    <!-- Pantalla 2 -->
+    <section id="screen-yes" class="panel hidden" aria-label="Celebración">
+      <h1 class="title">¡NUNCA DUDÉ DE TU SI!💝</h1>
+
+      <p class="message">
+        En este preciso momento, queda ocupada tu cena del dia 14/02/2026.
+      </p>
+
+      <div class="media">
+        <!-- Pon aquí tu imagen más adelante -->
+        <img
+  id="celebration-img"
+  src="monos_san_valentin.png"
+  alt="Imagen de monos enamorados por San Valentín"
+/>
+
+<!--
+    <div class="actions2">
+        <button id="btn-restart" class="btn btn-secondary" type="button">
+          Te gusta el vicio, ve a por ese NO!
+        </button>
+      </div> -->
+    </section>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
