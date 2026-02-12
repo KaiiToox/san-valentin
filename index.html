@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>San Valentín</title>
+  <link rel="stylesheet" href="css2.css" />
+</head>
+
+<body>
+  <main class="frame">
+    <section id="screen-ask" class="panel" aria-label="Pregunta">
+      <h1 class="title">Una pregunta importante 💘</h1>
+
+      <p class="question">¿Quieres ser mi San Valentín de los impacientes?</p>
+
+      <p id="hint" class="hint" aria-live="polite"></p>
+
+      <div id="playground" class="playground" aria-label="Respuestas">
+        <button id="btn-yes" class="btn btn-yes" type="button">
+          <img src="but_yes.jpeg" alt="" class="btn-icon" />
+          <span>Sí</span>
+        </button>
+
+        <button id="btn-no" class="btn btn-no" type="button">
+          <img src="but_no.jpeg" alt="" class="btn-icon" />
+          <span>No</span>
+        </button>
+      </div>
+
+      <p class="fineprint challenge">¿Te atreves a decir que NO?.</p>
+    </section>
+
+    <section id="screen-yes" class="panel hidden" aria-label="Celebración">
+      <h1 class="title">¡NUNCA DUDÉ DE TU SÍ! 💝</h1>
+
+      <p class="message">
+        Antes de que me pongas más planes para el sábado, tienes una cita a la hora de la cena el 14/02/2026.<br/>
+        Te quiero.
+      </p>
+
+      <div class="media">
+        <img
+          id="celebration-img"
+          src="Patines.jpeg"
+          alt="Imagen de celebración"
+        />
+      </div>
+    </section>
+  </main>
+
+  <div id="confetti-container" aria-hidden="true"></div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
+
